@@ -15,6 +15,7 @@
 | ディスプレイ | [128x96 OLED, SSD1351](https://www.adafruit.com/product/1673) | SPI 接続、基板上の microSD は使わない |
 | 入力ボタン | タクトスイッチ | 4 個、ジャンパワイヤーで 6 個まで増やせる配置にする |
 | リグ用端子 | [USB-A メス DIP 化キット](https://akizukidenshi.com/catalog/g/g107429/) | PIO-USB によるホスト |
+| リグ用 VBUS の電流制限 | [CH217K](https://akizukidenshi.com/catalog/g/g129464/) | SOT23-6 を DIP 変換基板に載せて実装 |
 | 電源入力 | [USB Type-C DIP 化キット (シンプル版)](https://akizukidenshi.com/catalog/g/g113080/) | 5 V のみ |
 | 基板 | [95x72mm ユニバーサル基板](https://akizukidenshi.com/catalog/g/g103054/) | |
 
@@ -32,7 +33,11 @@
 - 5 V 系は USB-C の VBUS から GPS、OLED、リグ用 USB-A に直接配る。
 - Pico へは USB-C の 5 V からショットキーダイオード経由で VSYS (39 番ピン) に入れる。VBUS (40 番ピン) は未接続とし、書き込み用の micro-USB を同時に挿しても電源が衝突しないようにする。
 - BME280 は 3V3(OUT) (36 番ピン) から給電する。
-- リグ用 USB-A の VBUS には電流制限を入れる。
+- リグ用 USB-A の VBUS には電流制限付きスイッチ IC の CH217K を入れる。
+    - 制限値は 500 mA を想定し、ISET と GND の間に 120 kΩ を入れる (制限電流 = 60 k ÷ 抵抗値)。
+    - VIN と VOUT にコンデンサを付ける。データシートの USB 用途での代表値は 120 µF。
+    - EN# と FLAG# を GPIO につなぎ、VBUS の入れ直しと異常検出ができるようにする。
+- IC-705 側は「USB Power Input (Phone, Tablet, PC)」を OFF にして使う。初期値は ON で、そのままだとこのデバイスから充電しようとする。
 - 消費電流は常時 120〜170 mA 程度の見込み (リグ側 VBUS を除く)。
 
 ### リグ用 USB ホスト
@@ -56,13 +61,12 @@ Pico 2 W を micro-USB が基板の上端に来る向きで中央上寄りに置
 | 21, 22 | GP16, GP17 | OLED DC, CS | 右下 |
 | 24, 25 | GP18, GP19 | OLED SCK, MOSI (SPI0) | 右下 |
 | 26 | GP20 | OLED RST | 右下 |
-| 29 | GP22 | VBUS スイッチ EN | 右上 |
+| 29 | GP22 | CH217K EN# | 右上 |
 | 31, 32 | GP26, GP27 | USB-A の D+, D− (PIO) | 右上 |
-| 34 | GP28 | VBUS スイッチ FAULT | 右上 |
+| 34 | GP28 | CH217K FLAG# | 右上 |
 
 - 予備は GP3、GP6〜GP9、GP21 の 6 本。GP8 / GP9 は UART1 に使えるので、将来の有線 CI-V 用に残せる。
-- 電流制限をポリスイッチにする場合、GP22 と GP28 も予備になる。
-- USB-C、USB-A、電流制限は Pico の電源ピンに近い右上にまとめる。
+- USB-C、USB-A、CH217K は Pico の電源ピンに近い右上にまとめる。
 - GPS アンテナは OLED の昇圧回路と Wi-Fi アンテナから離す。
 - BME280 は発熱源から離して基板の端に置く。
 
@@ -137,9 +141,9 @@ IC-705 は送受同時ができないので、送信中に自分のダウンリ�
 
 ## 未決・要確認
 
-- 電流制限の方式。電流制限付きハイサイドスイッチ IC か、ポリスイッチか。
+- CH217K の EN# の極性、ピン配置、500 mA 付近での制限精度。データシート本文で確認する。
 - IC-705 と PIO-USB 経由で CI-V が通るか。使用するクレートはどれも 0.1.0 台で、最初に実機で確認する。
 - 送信中に送信側 VFO の周波数を書き換えられるか。
 - USB ホストのプルダウン抵抗値。RP2350 の A2 ステッピングは E9 エラッタにより 15 kΩ では足りない可能性がある。手元の個体のステッピングと合わせて確認する。
-- IC-705 が USB の VBUS から充電しようとするか、その電流。
+- IC-705 の USB Power Input を ON のままつないだとき、電流制限が働いて切断と再接続を繰り返さないか。
 - 部品の寸法図と基板の穴数の照合。特に右列に USB 基板 2 枚と OLED が縦に収まるか。
