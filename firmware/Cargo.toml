@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = ["core/textdraw", "core/font-shinonome"]
+members = ["core/textdraw", "core/font-shinonome", "core/ssd1351"]
 
 [workspace.package]
 edition = "2024"
@@ -9,5 +9,7 @@ publish = false
 
 [workspace.dependencies]
 embedded-graphics = "0.8.2"
+embedded-hal = "1.0.0"
+embedded-hal-async = "1.0.0"
 encoding_rs = "0.8.44"
 textdraw = { path = "core/textdraw" }
