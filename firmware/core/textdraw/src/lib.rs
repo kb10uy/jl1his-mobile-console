@@ -8,7 +8,9 @@ pub mod build;
 mod font;
 mod style;
 mod table;
+mod wrap;
 
 pub use font::{Font, FontSet, Glyph};
 pub use style::TextStyle;
 pub use table::{Mapping, RANGE_ENTRY_SIZE, RANK_TABLE_SIZE, RangeTable, RankTable};
+pub use wrap::{LineBreak, WrappedLines};
