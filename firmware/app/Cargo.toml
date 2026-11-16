@@ -23,6 +23,10 @@ font-shinonome = { path = "../core/font-shinonome" }
 ssd1351 = { path = "../core/ssd1351" }
 textdraw = { path = "../core/textdraw" }
 
+[build-dependencies]
+aozora = { path = "../core/aozora" }
+font-shinonome = { path = "../core/font-shinonome" }
+
 [profile.release]
 debug = 2
 lto = true
