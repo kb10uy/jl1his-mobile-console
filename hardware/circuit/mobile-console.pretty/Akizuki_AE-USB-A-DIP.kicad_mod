@@ -1,0 +1,228 @@
+(footprint "Akizuki_AE-USB-A-DIP"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Akizuki AE-USB-A-DIP (107429) 23x16 mm USB-A receptacle breakout, receptacle opens toward +Y; SH pads are the inner fixing pin positions")
+	(property "Reference" "REF**"
+		(at 3.81 7.5 0)
+		(layer "F.Fab")
+		(uuid "e427d11e-1c0f-45b5-ad9e-684e1c406dea")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Akizuki_AE-USB-A-DIP"
+		(at 3.81 15.5 0)
+		(layer "F.Fab")
+		(uuid "ea398c7b-57eb-4479-b134-d8588c25917c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2d7088ec-c3ec-4ede-9e60-d9164ab9ef16")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "25da2d9b-39aa-4ee1-8c8a-3a573836bee8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -7.69 -1.75)
+		(end 15.31 14.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "150cc170-ea64-4bc1-8029-81957f43c34e")
+	)
+	(fp_rect
+		(start -7.69 -1.75)
+		(end 15.31 14.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "5ebd0095-a3f4-4f45-8829-08e26a5ca94f")
+	)
+	(fp_rect
+		(start -2.76 4.5)
+		(end 10.38 14.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "97725ef2-f50d-4e79-8a9e-f117b1b0d005")
+	)
+	(fp_circle
+		(center -2.76 5.75)
+		(end -1.61 5.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7c80e790-e290-49f0-b8a5-1090876fd1b8")
+	)
+	(fp_circle
+		(center 10.38 5.75)
+		(end 11.53 5.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "192dc57f-3cc3-4952-a0af-53ff31f61e40")
+	)
+	(fp_text user "VBUS"
+		(at 0 2.6 90)
+		(layer "F.Fab")
+		(uuid "e0022c63-2b4f-40d5-b63c-0e79659b2bff")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.105)
+			)
+		)
+	)
+	(fp_text user "D-"
+		(at 2.54 2.6 90)
+		(layer "F.Fab")
+		(uuid "20e10106-1851-45f9-a4d9-ee8f9c66af50")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.105)
+			)
+		)
+	)
+	(fp_text user "USB-A"
+		(at 3.81 10.5 0)
+		(layer "F.Fab")
+		(uuid "959d7ad9-95b1-4d25-a424-f84d8a3c3509")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "D+"
+		(at 5.08 2.6 90)
+		(layer "F.Fab")
+		(uuid "9eac9f28-2fae-4ec5-a925-be48870ff2e6")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.105)
+			)
+		)
+	)
+	(fp_text user "GND"
+		(at 7.62 2.6 90)
+		(layer "F.Fab")
+		(uuid "1410b8bb-527a-48c0-94df-54e4b14fcb1a")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.105)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "eec47286-d107-45fa-90de-e75f297b346c")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "21e3e5c5-9e7d-4ca5-9438-6a0a056d9b79")
+	)
+	(pad "3" thru_hole circle
+		(at 5.08 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5608e4f7-5142-4798-9292-c6ec489ea6d6")
+	)
+	(pad "4" thru_hole circle
+		(at 7.62 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0c7bd6f8-2bb8-4656-91fa-98e4eeaa9dfe")
+	)
+	(pad "SH" thru_hole circle
+		(at -5.08 10.16)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "94740b82-1f0b-46ee-94f7-459bccba95d1")
+	)
+	(pad "SH" thru_hole circle
+		(at -5.08 12.7)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e50d47e5-fa4c-4881-85cd-cc6572867b25")
+	)
+	(pad "SH" thru_hole circle
+		(at 12.7 10.16)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ea35007d-86fe-402d-b176-806d17e994d0")
+	)
+	(pad "SH" thru_hole circle
+		(at 12.7 12.7)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c9882446-f9fd-4d8f-8a63-b656436b63f9")
+	)
+	(embedded_fonts no)
+)

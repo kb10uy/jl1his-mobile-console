@@ -1,0 +1,119 @@
+(footprint "SW_Tactile_6mm_P7.62x5.08"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "6x6 mm tactile switch with legs spread to a 7.62 x 5.08 mm hole pattern for 2.54 mm universal board")
+	(property "Reference" "REF**"
+		(at 3.81 2.54 0)
+		(layer "F.Fab")
+		(uuid "5aa5f62a-5ffa-4e98-b26d-cbc024b295d3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SW_Tactile_6mm_P7.62x5.08"
+		(at 3.81 7.2 0)
+		(layer "F.Fab")
+		(uuid "110e845f-5282-4155-841a-7bc3a957102e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aa3f3dd6-b172-4ffa-8aea-dd2017a4fbbf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8f395074-dbd5-43b1-929d-a3d2a3f11e66")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.15 -1.15)
+		(end 8.77 6.23)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "3d226bd7-af2f-404f-bc6e-417177a9371e")
+	)
+	(fp_rect
+		(start 0.81 -0.46)
+		(end 6.81 5.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "49464037-7637-4f4f-a506-d3dc464100a6")
+	)
+	(fp_circle
+		(center 3.81 2.54)
+		(end 5.56 2.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "c5713984-2243-48bb-b287-8b551bae95ee")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1803146d-fa1a-4d1b-aef5-06c1f9d2e3db")
+	)
+	(pad "1" thru_hole circle
+		(at 7.62 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fc4e5244-2d99-4871-87c0-bf9bd1520759")
+	)
+	(pad "2" thru_hole circle
+		(at 0 5.08)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6175538b-121a-4c6b-a451-e66f3763ddaf")
+	)
+	(pad "2" thru_hole circle
+		(at 7.62 5.08)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e4058bec-8ad1-4ad9-8441-86af8ba04134")
+	)
+	(embedded_fonts no)
+)

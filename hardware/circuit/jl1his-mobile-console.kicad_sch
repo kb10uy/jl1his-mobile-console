@@ -5580,7 +5580,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mobile-console:AE-BME280"
 			(at 35.56 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -5827,7 +5827,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 251.46 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -6216,7 +6216,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 198.12 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -6297,7 +6297,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mobile-console:SW_Tactile_6mm_P7.62x5.08"
 			(at 40.64 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -6455,7 +6455,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 60.96 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -6536,7 +6536,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 226.06 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -6617,7 +6617,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 236.22 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -6698,7 +6698,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-6_W7.62mm"
 			(at 233.68 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -6791,7 +6791,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 50.8 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -7298,7 +7298,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 210.82 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -7610,7 +7610,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mobile-console:SW_Tactile_6mm_P7.62x5.08"
 			(at 40.64 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -7768,7 +7768,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mobile-console:AE-GPS_GYSFDMAXB"
 			(at 35.56 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -7858,7 +7858,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mobile-console:Akizuki_AE-USB-A-DIP"
 			(at 259.08 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -7948,7 +7948,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mobile-console:SW_Tactile_6mm_P7.62x5.08"
 			(at 96.52 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -8029,7 +8029,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 241.3 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -8187,7 +8187,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mobile-console:Adafruit_1673_OLED"
 			(at 241.3 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -8295,7 +8295,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mobile-console:Akizuki_AE-USB2.0-TYPE-C"
 			(at 30.48 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -8389,7 +8389,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal"
 			(at 66.04 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -8470,7 +8470,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 212.09 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -8705,7 +8705,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mobile-console:SW_Tactile_6mm_P7.62x5.08"
 			(at 40.64 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -8940,7 +8940,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mobile-console:SW_Tactile_6mm_P7.62x5.08"
 			(at 40.64 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -9021,7 +9021,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 210.82 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -9179,7 +9179,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mobile-console:SW_Tactile_6mm_P7.62x5.08"
 			(at 96.52 167.64 0)
 			(hide yes)
 			(show_name no)

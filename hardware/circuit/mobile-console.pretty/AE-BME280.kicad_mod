@@ -1,0 +1,200 @@
+(footprint "AE-BME280"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Akizuki AE-BME280 16x10 mm SIP module standing on its L-type 6-pin header; board side is assumed")
+	(property "Reference" "REF**"
+		(at 6.35 -2.3 0)
+		(layer "F.Fab")
+		(uuid "955c24b6-4857-4ce7-b42c-62d0482d1720")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "AE-BME280"
+		(at 6.35 5.2 0)
+		(layer "F.Fab")
+		(uuid "a5e57cbf-913a-468d-8984-ffc4a5eaa229")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ed812f0e-6459-40b5-97a6-98ab1ca9a963")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "44ae848e-209a-4960-8c26-71e7c4aed5fe")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.65 -1.27)
+		(end 14.35 4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "bc91ab70-7625-4414-8939-01839ef7efdc")
+	)
+	(fp_line
+		(start -1.65 1.27)
+		(end 14.35 1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cd694e19-97b8-4870-8737-e5499a40e22e")
+	)
+	(fp_rect
+		(start -1.65 -1.27)
+		(end 14.35 4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "25dfa16f-3ac1-4223-8c76-8f0f433fed96")
+	)
+	(fp_text user "VDD"
+		(at 0 2.9 90)
+		(layer "F.Fab")
+		(uuid "89d1cff7-f5ca-4849-ac58-b47b8433be5b")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.105)
+			)
+		)
+	)
+	(fp_text user "GND"
+		(at 2.54 2.9 90)
+		(layer "F.Fab")
+		(uuid "3ae1760e-3c4a-4759-b2cf-67f846d03447")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.105)
+			)
+		)
+	)
+	(fp_text user "CSB"
+		(at 5.08 2.9 90)
+		(layer "F.Fab")
+		(uuid "4a7bc752-6ca7-48a5-96ec-0843bcd4c9b0")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.105)
+			)
+		)
+	)
+	(fp_text user "SDI"
+		(at 7.62 2.9 90)
+		(layer "F.Fab")
+		(uuid "0a1939e0-c793-4442-957f-10480e25cd02")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.105)
+			)
+		)
+	)
+	(fp_text user "SDO"
+		(at 10.16 2.9 90)
+		(layer "F.Fab")
+		(uuid "7f3efa13-c6e1-450e-8de6-25837caf32a4")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.105)
+			)
+		)
+	)
+	(fp_text user "SCK"
+		(at 12.7 2.9 90)
+		(layer "F.Fab")
+		(uuid "1ccb0b03-41b5-4412-87ef-702bd6df29a0")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.105)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5f6c57b9-f147-4d75-9bc7-7b4690d6e5d1")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dc089976-75b0-4eda-9544-e3ff23254806")
+	)
+	(pad "3" thru_hole circle
+		(at 5.08 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4d25d32d-f143-4f3e-b598-6b77ea4e31eb")
+	)
+	(pad "4" thru_hole circle
+		(at 7.62 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "bbcbdb41-206a-469f-a8a6-2a41b2913b89")
+	)
+	(pad "5" thru_hole circle
+		(at 10.16 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "48bab104-8e18-4de8-807e-3655d0d5215d")
+	)
+	(pad "6" thru_hole circle
+		(at 12.7 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "752018a3-73fd-48cb-a219-5495f2b0ebeb")
+	)
+	(embedded_fonts no)
+)
