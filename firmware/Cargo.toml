@@ -1,0 +1,13 @@
+[workspace]
+resolver = "3"
+members = ["core/textdraw", "core/font-shinonome"]
+
+[workspace.package]
+edition = "2024"
+license = "MIT OR Apache-2.0"
+publish = false
+
+[workspace.dependencies]
+embedded-graphics = "0.8.2"
+encoding_rs = "0.8.44"
+textdraw = { path = "core/textdraw" }

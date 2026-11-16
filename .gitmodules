@@ -1,0 +1,3 @@
+[submodule "firmware/core/font-shinonome/vendor/shinonome-font"]
+	path = firmware/core/font-shinonome/vendor/shinonome-font
+	url = https://github.com/code4fukui/shinonome-font.git
