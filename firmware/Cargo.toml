@@ -1,6 +1,7 @@
 [workspace]
 resolver = "3"
 members = ["core/textdraw", "core/font-shinonome", "core/ssd1351"]
+exclude = ["app"]
 
 [workspace.package]
 edition = "2024"
